@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SR Enterprises - Plumbing Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .call-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .call-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SR Enterprises - Plumbing Services & Items</h1>
+    <p>Call us to hire plumbers or book plumbing items!</p>
+</header>
+
+<div class="content">
+    
+    <div class="section">
+        <h2>Available Plumbing Items</h2>
+        <ul>
+            <li>Pipe Wrenches</li>
+            <li>PVC Pipes</li>
+            <li>Faucets</li>
+            <li>Wash Basins</li>
+            <li>Shower Heads</li>
+            <li>Water Taps</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Hire a Plumber</h2>
+        <p>You can contact our trusted plumbers directly:</p>
+        <ul>
+            <li>Plumber Ramesh - 📞 <a href="tel:+911234567890">+91 12345 67890</a></li>
+            <li>Plumber Suresh - 📞 <a href="tel:+919876543210">+91 98765 43210</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contact My Father</h2>
+        <p>For orders or questions, call:</p>
+        <a class="call-button" href="tel:+918299660267">📞 Call My Father - 8299660267</a>
+    </div>
+
+</div>
+
+</body>
+</html>
