@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SR Enterprises Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    h1 {
+      color: #0d47a1;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 2px solid #0d47a1;
+      border-radius: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔍 Search Plumbing Items</h1>
+  <input type="text" id="searchInput" placeholder="Type to search...">
+
+  <ul id="itemList">
+    <li>Pipe Wrench</li>
+    <li>Water Tap</li>
+    <li>PVC Pipe</li>
+    <li>Plumbing Tape</li>
+    <li>Drain Cleaner</li>
+    <li>Hand Shower</li>
+    <li>Geyser Fittings</li>
+    <li>Wash Basin</li>
+    <li>Angle Valve</li>
+    <li>Toilet Jet Spray</li>
+  </ul>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const itemList = document.getElementById("itemList");
+    const items = itemList.getElementsByTagName("li");
+
+    searchInput.addEventListener("input", function() {
+      const filter = searchInput.value.toLowerCase();
+      for (let i = 0; i < items.length; i++) {
+        const itemText = items[i].textContent.toLowerCase();
+        if (itemText.includes(filter)) {
+          items[i].style.display = "";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
